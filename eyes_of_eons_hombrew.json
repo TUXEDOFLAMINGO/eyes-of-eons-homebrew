@@ -633,9 +633,77 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Freedom of Bones",
+			"source": "EyesofEons",
+			"page": 1,
+			"level": 8,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a humanoid skull, and a drop of your blood which is consumed by the spell",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"uniqueId": "d97b679d-7ab0-45df-b887-ff5a6e410c36",
+			"entries": [
+				"You look at a creature within 60 feet and attempt to animate its entire skeletal structure to free itself from that person's body. The target must make a Constitution saving throw. A creature with 100 hit points or fewer has disadvantage on the saving throw. It takes {@damage 12d10} necrotic damage on a failed save, or half as much on a success. ",
+				"A creature reduced to 0 by this spell rises at the start of your next turn as a skeleton that is permanently under your command, following your verbal orders to the best of its abilities. Upon its death it then crumbles to dust.",
+				"Skeletal monsters and creatures without skeletons are immune to the effects of this spell. "
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 9th level or higher, all creatures within 30 feet of you must succeed on the saving throw instead. You then take damage equal to the damage dealt, which can’t be reduced in any way as the magic of the spell twists itself and eats at you from within."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
 		}
 	],
-		"item": [
+	"item": [
 		{
 			"name": "Crown of Millennium Hearts",
 			"source": "EyesofEons",
