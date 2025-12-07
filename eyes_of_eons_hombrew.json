@@ -543,7 +543,6 @@
 					}
 				]
 			},
-			"uniqueId": "7dfd2374-7eb1-4123-ab95-420c058b9ee9",
 			"shortName": "Frurdis",
 			"conditionImmune": [
 				"charmed"
@@ -571,7 +570,6 @@
 	],
 	"spell": [
 		{
-			"uniqueId": "a046bb27-df23-4f31-9392-ee59587907b1",
 			"name": "Antis' Bubble Bomb",
 			"level": 1,
 			"school": "V",
@@ -677,7 +675,6 @@
 					}
 				]
 			},
-			"uniqueId": "d97b679d-7ab0-45df-b887-ff5a6e410c36",
 			"entries": [
 				"You look at a creature within 60 feet and attempt to animate its entire skeletal structure to free itself from that person's body. The target must make a Constitution saving throw. A creature with 100 hit points or fewer has disadvantage on the saving throw. It takes {@damage 12d10} necrotic damage on a failed save, or half as much on a success. ",
 				"A creature reduced to 0 by this spell rises at the start of your next turn as a skeleton that is permanently under your command, following your verbal orders to the best of its abilities. Upon its death it then crumbles to dust.",
@@ -700,6 +697,387 @@
 			],
 			"areaTags": [
 				"ST"
+			]
+		},
+		{
+			"name": "Animate Crawling Hand",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell binds the life force of a murderer to its severed hand, haunting and animating it. Choose a severed hand you can see within range. The hand must have been severed from the body of a humanoid murderer within the last seven days. If the murderer is dead and its spirit already manifests as another undead creature, or if its dead spirit has long passed on to another plane, the spell fails.",
+				"The target hand becomes a {@creature Crawling Claw}. It is under your control for 24 hours, after which the hand becomes inactive and can't be animated again. On each of your turns, you can use a bonus action to mentally command the crawling claw. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command for it to follow to the best of its understanding. If you issue no commands, the claw follows its last command to the best of its ability. Once given an order, the claw continues to follow it until the task is complete."
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a butcher's knife"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 1st level or higher, the crawling claw remains active for an additional 24 hours for every slot level above 1st. When cast using a spell slot of 6th level or higher, the crawling claw remains active until slain."
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Animate Greater Undead",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell creates an undead servant. Choose a pile of bones or a corpse of a Huge or smaller creature within range. The creature must have been a beast, giant, or plant of CR 5 or lower. Your spell imbues the target with a foul mimicry of like, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse. The target remains the statistics that it had in life, except for the following modifications:",
+				"<li>The target loses any trait, such as Amphibious, that assumes a living physiology.</li>",
+				"<li>The target can't cast spells, and thus loses the Spellcasting and Innate Spellcasting traits if it had them.</li>",
+				"<li>The target's ability scores and traits are adjusted as per the skeleton or zombie entry of the {@table Creating NPCs from Scratch; NPC Features|DMG|NPC Features} table on page 282 of the Dungeon Master's Guide.</li>"
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "one clay pot filled with grave dirt, one claw pot filled with brackish water, and one black onyx stone worth 300 gp"
+			},
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Bite of the King",
+			"level": 8,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your maw suddenly opens many times its normal size as it attempts to swallow your victim whole. After the attempt, it immediately returns to its normal size.",
+				"Make a melee spell attack against a creature you can reach. On a hit, the target takes {@damage 6d12} piercing damage, and it must make a Dexterity saving throw. On a failed save, the target is immediately banished to the \"stomach dimension\" for the duration.",
+				"The stomach dimension is a demiplane that adjusts its size to squeeze the largest creature that is currently inside of it. While in the stomach dimension, a creature a {@condition blinded} and {@condition restrained}, and it takes {@damage 4d6} acid damage plus {@damage 4d6} bludgeoning damage at the start of each of your turns. To escape, a creature must deal 35 damage to the walls of the stomach dimension on a single turn. The walls of the stomach dimension have an AC of 21 and are immune to acid, necrotic, poison, and psychic damage.",
+				"A creature that successfully exits the stomach or survives until the end of the spell's duration appears to cut an opening in the air, appearing next to you in the nearest unoccupied space.",
+				"Each caster of this spell has a personal stomach dimension that this spell links to. If a creature dies while within your stomach dimension, you can choose to eject its corpse and the items it had possessed, or you can let it remain as a warning for future victims of this spell."
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true
+			},
+			"damageInflict": [
+				"acid",
+				"bludgeoning",
+				"piercing"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Command Horde",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell. and as an action on each of your turns for the duration, you can command up to four undead that you can see within range that are under your control. You give the same command to each target. You choose from one of the following commands when you cast this spell:",
+				"{@bold <i>Advance.</i>} Each target can use its reaction to move up to its speed.",
+				"{@bold <i>Apprehend.</i>} Each target can use its reaction to attempt to grapple one creature within its reach. The undead can all grapple the same target or can split their grapples between different targets.",
+				"{@bold <i>Attack.</i>} Each target can use its reaction to make one attack against a creature they can see. The undead can all attack the same target or splot their attacks between different targets."
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you can target two additional undead for each slot above 3rd."
+					]
+				}
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Ghoul Gauntlet",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your touch gradually transforms a living victim into a ravening, flesh-eating ghoul. The transformation process begins at a limb or extremity (usually the hand or arm) touched, and spreads outwards as the target's body slowly dies and is transformed into a ghoul's cold, undying flesh.",
+				"Make a melee spell attack against a humanoid within your reach. On hit, the target is {@condition poisoned}.",
+				"At the end of each of the {@condition poisoned} creature's turns, the creature must make a Constitution saving throw. On a failed save, the creature takes {@damage 4d6} necrotic damage. If the target succeeds on three of the saves, it is no longer {@condition poisoned} and the spell ends. The spell can also be ended early by {@spell greater restoration}, {@spell heal}, or {@spell remove curse}.",
+				"If the target is reduced to 0 hit points while {@condition poisoned} by this spell, it dies and rises at the start of your next turn as a ghoul that follows your verbal commands to the best of its ability. The ghoul melts into a pile of flesh and is destroyed after 24 hours."
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"poisoned"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Revive Undead",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You restore animation to the remains of an undead creature you touch. The target reanimates with all of its hit points, but it is under no compulsion to behave in any particular way unless it was under your control before it was destroyed. This spell fails if the target was destroyed by a Turn Undead effect, or if its body was otherwise completely obliterated by a spell or other effect. The undead must have been inactive for no more than a week, and its challenge rating must be equal to or less than your character level (or challenge rating if you don't have a class level)."
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a black pearl worth at least 500 gp"
+			}
+		},
+		{
+			"name": "Veil of Undeath",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You gain many of the traits common to undead creatures. You gain the following benefits for the duration:",
+				"<ul>",
+				"<li>Your body appears sick and ghastly, as though you were a walking corpse. Undead with an Intelligence score of 6 or lower won't attack you except in self defense or when ordered to, and you are detected as an undead by a paladin's {@classFeature Divine Sense|paladin} feature.</li>",
+				"<li>You don't require air, food, drink, or sleep.</li>",
+				"<li>You are immune to necrotic and poison damage. Whenever you are subjected to necrotic damage, you instead gain a number of temporary hit points equal to half the necrotic damage you would have taken.</li>",
+				"<li>You are immune to the {@condition poisoned} condition, disease, and {@condition exhaustion}.</li>",
+				"</ul>"
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a black sapphire worth 1,000 gp"
+			},
+			"miscTags": [
+				"THP"
 			]
 		}
 	],
