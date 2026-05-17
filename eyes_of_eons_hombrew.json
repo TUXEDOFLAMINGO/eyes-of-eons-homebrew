@@ -5,7 +5,7 @@
 				"json": "EyesofEons",
 				"abbreviation": "EoE",
 				"full": "Eyes of Eons",
-				"version": "0.0.2",
+				"version": "0.0.3",
 				"authors": [
 					"The Eyes of Eons"
 				],
@@ -567,6 +567,232 @@
 				"dexterity"
 			],
 			"uniqueId": "4157f652-ef86-4bb4-bf3c-794b7935a190"
+		},
+		{
+			"uniqueId": "96f693a6-2e40-41c7-b56c-68d8b46b46a7",
+			"name": "Animated Scimitar",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"source": "EyesofEons",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d6",
+				"average": 17
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 11,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"passive": 10,
+			"cr": "1/4",
+			"shortName": "Scimitar",
+			"page": 1,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"The scimitar is {@condition incapacitated} while in the area of an {@i antimagic field}. If targeted by {@i dispel magic}, the scimitar must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the scimitar remains motionless, it is indistinguishable from a normal scimitar."
+					]
+				},
+				{
+					"name": "Dancing Steel",
+					"entries": [
+						"The animated weapon possesses this trait when it acts as a familiar. As a bonus action on its companion's turn, they can command the scimitar to move up to 20 feet and attack a creature within 5 feet of it. On hit, the target takes damage of the weapon's type equal to the weapon's damage die + the companion's spellcasting ability modifier in addition to its normal effects. The Animated Scimitar is considered a +1 Scimitar."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			]
+		},
+		{
+			"uniqueId": "83e79227-26b6-400f-a36b-face9b9b0c43",
+			"name": "Animated Spellbook",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"source": "EyesofEons",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d6",
+				"average": 17
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 11,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"passive": 10,
+			"cr": "1/4",
+			"shortName": "Spellbook",
+			"page": 1,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"The spellbook is {@condition incapacitated} while in the area of an {@i antimagic field}. If targeted by {@i dispel magic}, the spellbook must succeed on a Constitution saving throw against the caster's spell save DC or fall {@condition unconscious} for 1 minute."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the spellbook remains motionless, it is indistinguishable from an ordinary object."
+					]
+				},
+				{
+					"name": "Flying Focus",
+					"entries": [
+						"The Animated Spellbook possesses this trait when it acts as a familiar. While this spellbook is within 100 feet of its companion, it can be used as a spellcasting focus. As an action, while the spellbook is within 5 feet of its companion, the companion can use its action to cast any first level spell, expending a spell slot. The companion must complete a short or long rest before using the spellbook in this way again."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Animated Spellbook's innate spellcasting ability is Intelligence (spell save {@dc 14}, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell light}",
+						"{@spell mage hand}",
+						"{@spell mending}",
+						"{@spell thunderclap|XGE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell catapult|XGE}",
+							"{@spell comprehend languages}",
+							"{@spell identify}",
+							"{@spell magic missile}",
+							"{@spell sending}"
+						],
+						"1e": [
+							"{@spell counterspell}",
+							"{@spell dispel magic}",
+							"{@spell enlarge/reduce}",
+							"{@spell hold person}",
+							"{@spell wall of sand|XGE}",
+							"{@spell wall of water|XGE}",
+							"{@spell wind wall}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"damageTagsSpell": [
+				"B",
+				"O",
+				"T"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
 		}
 	],
 	"spell": [
