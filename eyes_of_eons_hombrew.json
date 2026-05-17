@@ -5,7 +5,7 @@
 				"json": "EyesofEons",
 				"abbreviation": "EoE",
 				"full": "Eyes of Eons",
-				"version": "0.0.1",
+				"version": "0.0.2",
 				"authors": [
 					"The Eyes of Eons"
 				],
@@ -565,7 +565,8 @@
 			"savingThrowForcedLegendary": [
 				"constitution",
 				"dexterity"
-			]
+			],
+			"uniqueId": "4157f652-ef86-4bb4-bf3c-794b7935a190"
 		}
 	],
 	"spell": [
@@ -630,7 +631,8 @@
 						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} and the radius increases by 5 feet for each slot level above 1st."
 					]
 				}
-			]
+			],
+			"uniqueId": "c425a31e-eb8f-41c9-b6f1-fc72479fe5a7"
 		},
 		{
 			"name": "Freedom of Bones",
@@ -697,7 +699,8 @@
 			],
 			"areaTags": [
 				"ST"
-			]
+			],
+			"uniqueId": "d4a5556c-773e-4840-ad5a-a3de729c108f"
 		},
 		{
 			"name": "Animate Crawling Hand",
@@ -754,7 +757,8 @@
 			},
 			"miscTags": [
 				"SMN"
-			]
+			],
+			"uniqueId": "cdaed3d8-82fd-4da2-a54e-e1a68e2e696c"
 		},
 		{
 			"name": "Animate Greater Undead",
@@ -788,9 +792,15 @@
 			},
 			"entries": [
 				"This spell creates an undead servant. Choose a pile of bones or a corpse of a Huge or smaller creature within range. The creature must have been a beast, giant, or plant of CR 5 or lower. Your spell imbues the target with a foul mimicry of like, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse. The target remains the statistics that it had in life, except for the following modifications:",
-				"<li>The target loses any trait, such as Amphibious, that assumes a living physiology.</li>",
-				"<li>The target can't cast spells, and thus loses the Spellcasting and Innate Spellcasting traits if it had them.</li>",
-				"<li>The target's ability scores and traits are adjusted as per the skeleton or zombie entry of the {@table Creating NPCs from Scratch; NPC Features|DMG|NPC Features} table on page 282 of the Dungeon Master's Guide.</li>"
+				"
+The target loses any trait, such as Amphibious, that assumes a living physiology.
+",
+				"
+The target can't cast spells, and thus loses the Spellcasting and Innate Spellcasting traits if it had them.
+",
+				"
+The target's ability scores and traits are adjusted as per the skeleton or zombie entry of the {@table Creating NPCs from Scratch; NPC Features|DMG|NPC Features} table on page 282 of the Dungeon Master's Guide.
+"
 			],
 			"source": "EyesofEons",
 			"page": 1,
@@ -801,7 +811,8 @@
 			},
 			"miscTags": [
 				"SMN"
-			]
+			],
+			"uniqueId": "513c93f0-7525-4a9f-a90e-06609e13eb52"
 		},
 		{
 			"name": "Bite of the King",
@@ -861,7 +872,8 @@
 			],
 			"areaTags": [
 				"ST"
-			]
+			],
+			"uniqueId": "c10963b6-1f75-49fe-ad00-e7ec1faf0117"
 		},
 		{
 			"name": "Command Horde",
@@ -900,9 +912,9 @@
 			},
 			"entries": [
 				"When you cast this spell. and as an action on each of your turns for the duration, you can command up to four undead that you can see within range that are under your control. You give the same command to each target. You choose from one of the following commands when you cast this spell:",
-				"{@bold <i>Advance.</i>} Each target can use its reaction to move up to its speed.",
-				"{@bold <i>Apprehend.</i>} Each target can use its reaction to attempt to grapple one creature within its reach. The undead can all grapple the same target or can split their grapples between different targets.",
-				"{@bold <i>Attack.</i>} Each target can use its reaction to make one attack against a creature they can see. The undead can all attack the same target or splot their attacks between different targets."
+				"{@bold Advance.} Each target can use its reaction to move up to its speed.",
+				"{@bold Apprehend.} Each target can use its reaction to attempt to grapple one creature within its reach. The undead can all grapple the same target or can split their grapples between different targets.",
+				"{@bold Attack.} Each target can use its reaction to make one attack against a creature they can see. The undead can all attack the same target or splot their attacks between different targets."
 			],
 			"source": "EyesofEons",
 			"page": 1,
@@ -921,7 +933,8 @@
 			],
 			"areaTags": [
 				"MT"
-			]
+			],
+			"uniqueId": "97f35ecc-ad14-4592-b48b-c3435afc3bdf"
 		},
 		{
 			"name": "Ghoul Gauntlet",
@@ -985,7 +998,8 @@
 			],
 			"miscTags": [
 				"SMN"
-			]
+			],
+			"uniqueId": "7f524de7-1bd5-47fc-8215-97b731782ce9"
 		},
 		{
 			"name": "Revive Undead",
@@ -1025,7 +1039,8 @@
 				"v": true,
 				"s": true,
 				"m": "a black pearl worth at least 500 gp"
-			}
+			},
+			"uniqueId": "3faf1db4-4dd9-4489-b4e9-fd6d4b655ecd"
 		},
 		{
 			"name": "Veil of Undeath",
@@ -1062,12 +1077,22 @@
 			},
 			"entries": [
 				"You gain many of the traits common to undead creatures. You gain the following benefits for the duration:",
-				"<ul>",
-				"<li>Your body appears sick and ghastly, as though you were a walking corpse. Undead with an Intelligence score of 6 or lower won't attack you except in self defense or when ordered to, and you are detected as an undead by a paladin's {@classFeature Divine Sense|paladin} feature.</li>",
-				"<li>You don't require air, food, drink, or sleep.</li>",
-				"<li>You are immune to necrotic and poison damage. Whenever you are subjected to necrotic damage, you instead gain a number of temporary hit points equal to half the necrotic damage you would have taken.</li>",
-				"<li>You are immune to the {@condition poisoned} condition, disease, and {@condition exhaustion}.</li>",
-				"</ul>"
+				"
+",
+				"
+Your body appears sick and ghastly, as though you were a walking corpse. Undead with an Intelligence score of 6 or lower won't attack you except in self defense or when ordered to, and you are detected as an undead by a paladin's {@classFeature Divine Sense|paladin} feature.
+",
+				"
+You don't require air, food, drink, or sleep.
+",
+				"
+You are immune to necrotic and poison damage. Whenever you are subjected to necrotic damage, you instead gain a number of temporary hit points equal to half the necrotic damage you would have taken.
+",
+				"
+You are immune to the {@condition poisoned} condition, disease, and {@condition exhaustion}.
+",
+				"
+"
 			],
 			"source": "EyesofEons",
 			"page": 1,
@@ -1078,6 +1103,65 @@
 			},
 			"miscTags": [
 				"THP"
+			],
+			"uniqueId": "ac376924-43a1-4326-ac07-25e6277567cb"
+		},
+		{
+			"uniqueId": "56891dc8-bf1c-46d3-975a-51e6d9d0b1e3",
+			"name": "Mourning Mist",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You hurl a globule of black mist at a point within range. Each non-undead creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d10} necrotic damage, and each undead ally of your choice has advantage on attacks against the creature until the end of your next turn."
+			],
+			"source": "EyesofEons",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bottle of black ichor"
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"miscTags": [
+				"ADV"
 			]
 		}
 	],
